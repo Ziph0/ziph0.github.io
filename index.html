@@ -1,190 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nozipho Mpiyakhe | Full-stack Developer</title>
+    
+    <link rel="icon" href="https://fav.farm/💻" />
 
-<title>Nozipho Mpiyakhe | Frontend Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<script src="https://cdn.tailwindcss.com"></script>
-
-<style>
-html { scroll-behavior: smooth; }
-
-body{
-background:#0f172a;
-color:#e2e8f0;
-}
-
-.card{
-background:#1e293b;
-transition:all .25s ease;
-}
-
-.card:hover{
-transform:translateY(-6px);
-box-shadow:0 15px 40px rgba(0,0,0,0.35);
-border-color:#38bdf8;
-}
-</style>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background:#0f172a; color:#e2e8f0; }
+        .card { background:#1e293b; transition:all .25s ease; border: 1px solid #1e293b; }
+        .card:hover {
+            transform:translateY(-6px);
+            box-shadow:0 10px 35px rgba(244,114,182,0.25);
+            border-color:#f472b6;
+        }
+    </style>
 </head>
 
 <body class="font-sans">
 
-<!-- NAV -->
+    <nav class="max-w-6xl mx-auto flex justify-between items-center p-6">
+        <a href="#" class="font-bold text-pink-400 text-lg">Nozipho Mpiyakhe</a>
+        
+        <div class="space-x-8 text-gray-400 text-sm font-medium">
+            <a href="#projects" class="hover:text-white transition">Projects</a>
+            <a href="#skills" class="hover:text-white transition">Skills</a>
+            <a href="https://github.com/Ziph0" target="_blank" class="hover:text-white transition">GitHub</a>
+        </div>
+    </nav>
 
-<nav class="max-w-6xl mx-auto flex justify-between items-center p-6">
+    <header class="max-w-6xl mx-auto px-6 py-24">
+        <h2 class="text-5xl md:text-7xl font-extrabold mb-6">
+            Hi, I'm <span class="text-pink-400">Nozipho Mpiyakhe</span>
+        </h2>
+        <p class="text-xl text-gray-400 max-w-2xl leading-relaxed">
+            Full-stack developer experienced in **Angular**, **ASP.NET**, and building internal
+            business applications with APIs and SQL Server.
+        </p>
+    </header>
 
-<h1 class="font-bold text-sky-400 text-lg">
-Nozipho.dev
-</h1>
+ <section id="projects" class="max-w-6xl mx-auto px-6 py-10">
+        <h3 class="text-2xl font-bold mb-10 border-b border-gray-800 pb-2 text-pink-400">Selected Work</h3>
+        
+        <div class="card p-6 rounded-xl border border-gray-800">
+            <span class="text-xs text-pink-400 font-mono uppercase">
+                Full-Stack • Angular • ASP.NET Core • SQL Server • WebForms
+            </span>
 
-<div class="space-x-6 text-gray-400">
+            <h4 class="text-xl font-bold mt-2 text-white">
+                CompanyPrinters Management System
+            </h4>
 
-<a href="#projects" class="hover:text-white">Projects</a>
-<a href="#skills" class="hover:text-white">Skills</a>
-<a href="https://github.com/Ziph0" class="hover:text-white">GitHub</a>
+            <p class="text-gray-400 mt-2 mb-4 leading-relaxed">
+                An enterprise-grade printer management suite demonstrating a modernization journey. 
+                I implemented full CRUD functionality with batch deletion logic across two architectural patterns: 
+                a legacy-style <strong>WebForms</strong> interface and a modern <strong>Angular</strong> SPA powered by 
+                an <strong>ASP.NET Core Web API</strong>.
+            </p>
 
-</div>
+            <ul class="text-gray-400 text-sm space-y-1 mb-6 grid md:grid-cols-2">
+                <li>• Angular with Material UI</li>
+                <li>• ASP.NET WebForms Architecture</li>
+                <li>• ASP.NET Core RESTful API</li>
+                <li>• SQL Server with Error Handling</li>
+                <li>• C# Exception Handling & Validation</li>
+                <li>• JS-driven Multi-selection Delete</li>
+            </ul>
 
-</nav>
+            <div class="flex gap-4 text-sm font-semibold">
+                <a href="#" class="text-pink-400 hover:underline">Live Demo</a>
+                <a href="https://github.com/Ziph0" class="text-gray-300 hover:underline">Source Code</a>
+            </div>
+        </div>
 
-<!-- HERO -->
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-12">
+        <h3 class="text-2xl font-bold mb-8 border-b border-gray-800 pb-2 text-pink-400">Tech Stack</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="bg-slate-800 px-4 py-2 rounded text-sm hover:bg-slate-700 border border-slate-700 transition">Angular</span>
+<span class="bg-slate-800 px-4 py-2 rounded text-sm hover:bg-slate-700 border border-slate-700 transition">TypeScript</span>
+<span class="bg-slate-800 px-4 py-2 rounded text-sm hover:bg-slate-700 border border-slate-700 transition">JavaScript</span>
+<span class="bg-slate-800 px-4 py-2 rounded text-sm hover:bg-slate-700 border border-slate-700 transition">ASP.NET Core</span>
+<span class="bg-slate-800 px-4 py-2 rounded text-sm hover:bg-slate-700 border border-slate-700 transition">ASP.NET WebForms</span>
+<span class="bg-slate-800 px-4 py-2 rounded text-sm hover:bg-slate-700 border border-slate-700 transition">SQL Server</span>
+<span class="bg-slate-800 px-4 py-2 rounded text-sm hover:bg-slate-700 border border-slate-700 transition">C#</span>
+<span class="bg-slate-800 px-4 py-2 rounded text-sm hover:bg-slate-700 border border-slate-700 transition">REST APIs</span>
+<span class="bg-slate-800 px-4 py-2 rounded text-sm hover:bg-slate-700 border border-slate-700 transition">JavaScript Validation</span>
+        </div>
+    </section>
 
-<header class="max-w-6xl mx-auto px-6 py-24">
+    <section class="max-w-6xl mx-auto px-6 py-16 text-center">
+        <h3 class="text-3xl font-bold mb-4">Let's Connect</h3>
+        <p class="text-gray-400 mb-8 max-w-lg mx-auto">Open to collaboration and software development opportunities.</p>
+        <a href="mailto:mpiyakhenozipho@gmail.com" class="bg-pink-500 text-slate-950 px-8 py-3 rounded-full font-bold hover:bg-pink-400 transition-colors shadow-lg shadow-pink-500/20">
+            Send me an Email
+        </a>
+    </section>
 
-<h2 class="text-5xl md:text-7xl font-extrabold mb-6">
-
-Hi, I'm  
-<span class="text-sky-400">
-Nozipho Mpiyakhe
-</span>
-
-</h2>
-
-<p class="text-xl text-gray-400 max-w-2xl leading-relaxed">
-
-Frontend developer focused on Angular applications, admin dashboards,
-and scalable UI systems.
-
-</p>
-
-</header>
-
-<!-- PROJECTS -->
-
-<section id="projects" class="max-w-6xl mx-auto px-6 py-10">
-
-<h3 class="text-2xl font-bold mb-10 border-b border-gray-800 pb-2">
-Projects
-</h3>
-
-<div class="grid md:grid-cols-2 gap-8">
-
-<!-- Project -->
-
-<div class="card p-6 rounded-xl border border-gray-800">
-
-<span class="text-xs text-sky-400 font-mono uppercase">
-Angular • Material • API
-</span>
-
-<h4 class="text-xl font-bold mt-2">
-User Management System
-</h4>
-
-<p class="text-gray-400 mt-2 mb-4">
-Admin dashboard with CRUD operations, filtering, dialogs and validation.
-</p>
-
-<div class="flex gap-4 text-sm">
-
-<a href="#" class="underline">Live Demo</a>
-<a href="#" class="underline">GitHub</a>
-
-</div>
-
-</div>
-
-<!-- Project -->
-
-<div class="card p-6 rounded-xl border border-gray-800">
-
-<span class="text-xs text-sky-400 font-mono uppercase">
-Angular • Dashboard
-</span>
-
-<h4 class="text-xl font-bold mt-2">
-Printer Management Tool
-</h4>
-
-<p class="text-gray-400 mt-2 mb-4">
-Internal system for managing printers with search, filters and API integration.
-</p>
-
-<div class="flex gap-4 text-sm">
-
-<a href="#" class="underline">Live Demo</a>
-<a href="#" class="underline">GitHub</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SKILLS -->
-
-<section id="skills" class="max-w-6xl mx-auto px-6 py-12">
-
-<h3 class="text-2xl font-bold mb-8 border-b border-gray-800 pb-2">
-Tech Stack
-</h3>
-
-<div class="flex flex-wrap gap-3">
-
-<span class="bg-slate-800 px-3 py-1 rounded">Angular</span>
-<span class="bg-slate-800 px-3 py-1 rounded">TypeScript</span>
-<span class="bg-slate-800 px-3 py-1 rounded">JavaScript</span>
-<span class="bg-slate-800 px-3 py-1 rounded">REST APIs</span>
-<span class="bg-slate-800 px-3 py-1 rounded">SQL</span>
-<span class="bg-slate-800 px-3 py-1 rounded">CSS</span>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="max-w-6xl mx-auto px-6 py-16 text-center">
-
-<h3 class="text-2xl font-bold mb-4">
-Contact
-</h3>
-
-<p class="text-gray-400 mb-6">
-Open to collaboration and opportunities.
-</p>
-
-<a
-href="mailto:mpiyakhenozipho@gmail.com"
-class="bg-sky-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-sky-400"
->
-Email Me
-</a>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer class="text-center text-gray-500 text-sm py-10">
-
-© 2026 Nozipho Mpiyakhe  
-Built with GitHub Pages
-
-</footer>
+    <footer class="text-center text-gray-600 text-sm py-10 border-t border-gray-900">
+        © 2026 Nozipho Mpiyakhe • Built with Passion & GitHub Pages
+    </footer>
 
 </body>
 </html>
