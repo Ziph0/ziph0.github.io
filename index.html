@@ -1,37 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Nozipho Mpiyakhe | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<header>
-  <h1>Nozipho Mpiyakhe</h1>
-  <p>Frontend Developer</p>
+<title>Nozipho Mpiyakhe | Frontend Developer</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+html { scroll-behavior: smooth; }
+
+body{
+background:#0f172a;
+color:#e2e8f0;
+}
+
+.card{
+background:#1e293b;
+transition:all .25s ease;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 40px rgba(0,0,0,0.35);
+border-color:#38bdf8;
+}
+</style>
+</head>
+
+<body class="font-sans">
+
+<!-- NAV -->
+
+<nav class="max-w-6xl mx-auto flex justify-between items-center p-6">
+
+<h1 class="font-bold text-sky-400 text-lg">
+Nozipho.dev
+</h1>
+
+<div class="space-x-6 text-gray-400">
+
+<a href="#projects" class="hover:text-white">Projects</a>
+<a href="#skills" class="hover:text-white">Skills</a>
+<a href="https://github.com/YOUR_USERNAME" class="hover:text-white">GitHub</a>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<header class="max-w-6xl mx-auto px-6 py-24">
+
+<h2 class="text-5xl md:text-7xl font-extrabold mb-6">
+
+Hi, I'm  
+<span class="text-sky-400">
+Nozipho Mpiyakhe
+</span>
+
+</h2>
+
+<p class="text-xl text-gray-400 max-w-2xl leading-relaxed">
+
+Frontend developer focused on Angular applications, admin dashboards,
+and scalable UI systems.
+
+</p>
+
 </header>
 
-<section>
-  <h2>Projects</h2>
-  <div class="project">
-    <h3>User Management System</h3>
-    <p>Angular + Material CRUD application.</p>
-  </div>
+<!-- PROJECTS -->
+
+<section id="projects" class="max-w-6xl mx-auto px-6 py-10">
+
+<h3 class="text-2xl font-bold mb-10 border-b border-gray-800 pb-2">
+Projects
+</h3>
+
+<div class="grid md:grid-cols-2 gap-8">
+
+<!-- Project -->
+
+<div class="card p-6 rounded-xl border border-gray-800">
+
+<span class="text-xs text-sky-400 font-mono uppercase">
+Angular • Material • API
+</span>
+
+<h4 class="text-xl font-bold mt-2">
+User Management System
+</h4>
+
+<p class="text-gray-400 mt-2 mb-4">
+Admin dashboard with CRUD operations, filtering, dialogs and validation.
+</p>
+
+<div class="flex gap-4 text-sm">
+
+<a href="#" class="underline">Live Demo</a>
+<a href="#" class="underline">GitHub</a>
+
+</div>
+
+</div>
+
+<!-- Project -->
+
+<div class="card p-6 rounded-xl border border-gray-800">
+
+<span class="text-xs text-sky-400 font-mono uppercase">
+Angular • Dashboard
+</span>
+
+<h4 class="text-xl font-bold mt-2">
+Printer Management Tool
+</h4>
+
+<p class="text-gray-400 mt-2 mb-4">
+Internal system for managing printers with search, filters and API integration.
+</p>
+
+<div class="flex gap-4 text-sm">
+
+<a href="#" class="underline">Live Demo</a>
+<a href="#" class="underline">GitHub</a>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section>
-  <h2>Skills</h2>
-  <ul>
-    <li>Angular</li>
-    <li>TypeScript</li>
-    <li>CSS</li>
-    <li>REST APIs</li>
-  </ul>
+<!-- SKILLS -->
+
+<section id="skills" class="max-w-6xl mx-auto px-6 py-12">
+
+<h3 class="text-2xl font-bold mb-8 border-b border-gray-800 pb-2">
+Tech Stack
+</h3>
+
+<div class="flex flex-wrap gap-3">
+
+<span class="bg-slate-800 px-3 py-1 rounded">Angular</span>
+<span class="bg-slate-800 px-3 py-1 rounded">TypeScript</span>
+<span class="bg-slate-800 px-3 py-1 rounded">JavaScript</span>
+<span class="bg-slate-800 px-3 py-1 rounded">REST APIs</span>
+<span class="bg-slate-800 px-3 py-1 rounded">SQL</span>
+<span class="bg-slate-800 px-3 py-1 rounded">CSS</span>
+
+</div>
+
 </section>
 
-<footer>
-  <p>© 2026</p>
+<!-- CONTACT -->
+
+<section class="max-w-6xl mx-auto px-6 py-16 text-center">
+
+<h3 class="text-2xl font-bold mb-4">
+Contact
+</h3>
+
+<p class="text-gray-400 mb-6">
+Open to collaboration and opportunities.
+</p>
+
+<a
+href="mailto:youremail@email.com"
+class="bg-sky-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-sky-400"
+>
+Email Me
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="text-center text-gray-500 text-sm py-10">
+
+© 2026 Nozipho Mpiyakhe  
+Built with GitHub Pages
+
 </footer>
 
 </body>
