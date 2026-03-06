@@ -49,13 +49,23 @@ nav {backdrop-filter: blur(8px);
         .custom-scrollbar::-webkit-scrollbar {
     height: 4px; 
 }
+
 section {
-    padding-top: 5rem;    
-    padding-bottom: 5rem; 
+    padding-top: 10rem !important;    /* Increased to 10rem for clear separation */
+    padding-bottom: 10rem !important; 
 }
 
+/* Force the Home header to take up the full screen height */
+header#home {
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+/* Ensure the scroll hits the right spot */
 section, header {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 100px !important;
 }
     </style>
 </head>
